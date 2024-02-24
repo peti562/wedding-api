@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/snykk/go-rest-boilerplate/internal/constants"
+	"github.com/peti562/wedding/internal/constants"
 	"github.com/spf13/viper"
 )
 

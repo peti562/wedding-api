@@ -10,14 +10,14 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/snykk/go-rest-boilerplate/internal/api"
+	"github.com/peti562/wedding/internal/api"
+	"github.com/peti562/wedding/internal/config"
+	"github.com/peti562/wedding/internal/constants"
+	"github.com/peti562/wedding/internal/utils"
+	"github.com/peti562/wedding/pkg/logger"
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
-	"github.com/snykk/go-rest-boilerplate/internal/config"
-	"github.com/snykk/go-rest-boilerplate/internal/constants"
-	"github.com/snykk/go-rest-boilerplate/internal/utils"
-	"github.com/snykk/go-rest-boilerplate/pkg/logger"
 )
 
 type App struct {

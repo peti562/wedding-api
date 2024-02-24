@@ -3,7 +3,7 @@ package helpers_test
 import (
 	"testing"
 
-	"github.com/snykk/go-rest-boilerplate/pkg/helpers"
+	"github.com/peti562/wedding/pkg/helpers"
 )
 
 func TestGenerateOTPCode(t *testing.T) {

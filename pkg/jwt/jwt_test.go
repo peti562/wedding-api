@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/snykk/go-rest-boilerplate/internal/config"
-	"github.com/snykk/go-rest-boilerplate/pkg/jwt"
+	"github.com/peti562/wedding/internal/config"
+	"github.com/peti562/wedding/pkg/jwt"
 	"github.com/stretchr/testify/assert"
 )
 

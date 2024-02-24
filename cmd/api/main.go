@@ -3,11 +3,11 @@ package main
 import (
 	"runtime"
 
+	"github.com/peti562/wedding/cmd/api/server"
+	"github.com/peti562/wedding/internal/config"
+	"github.com/peti562/wedding/internal/constants"
+	"github.com/peti562/wedding/pkg/logger"
 	"github.com/sirupsen/logrus"
-	"github.com/snykk/go-rest-boilerplate/cmd/api/server"
-	"github.com/snykk/go-rest-boilerplate/internal/config"
-	"github.com/snykk/go-rest-boilerplate/internal/constants"
-	"github.com/snykk/go-rest-boilerplate/pkg/logger"
 )
 
 func init() {

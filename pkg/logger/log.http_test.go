@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/snykk/go-rest-boilerplate/pkg/logger"
+	"github.com/peti562/wedding/pkg/logger"
 	"github.com/stretchr/testify/assert"
 )
 
