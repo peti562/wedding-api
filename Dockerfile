@@ -17,4 +17,4 @@ RUN cd ./cmd/api && go build -o /wedding-api
 EXPOSE 8080
  
 # Specifies the executable command that runs when the container starts
-CMD [ “/wedding-api/cmd/api” ]
+CMD [ "go", "run", "./cmd/api" ]
