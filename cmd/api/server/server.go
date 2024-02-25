@@ -10,6 +10,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/gin-contrib/cors"
 	"github.com/peti562/wedding/internal/api"
 	"github.com/peti562/wedding/internal/config"
 	"github.com/peti562/wedding/internal/constants"
@@ -33,7 +34,11 @@ func NewApp() (*App, error) {
 
 	// setup router
 	router := setupRouter()
+	corsConfig := cors.DefaultConfig()
+	corsConfig.AllowAllOrigins = true
 
+	// set up middlewares
+	router.Use(cors.Default())
 	// API Routes
 	root := router.Group("api")
 	api.Api(root, conn).Routes()
@@ -97,7 +102,11 @@ func setupRouter() *gin.Engine {
 	// create a new router instance
 	router := gin.New()
 
+	corsConfig := cors.DefaultConfig()
+	corsConfig.AllowAllOrigins = true
+
 	// set up middlewares
+	router.Use(cors.New(corsConfig))
 	router.Use(gin.LoggerWithFormatter(logger.HTTPLogger))
 	router.Use(gin.Recovery())
 
