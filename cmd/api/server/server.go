@@ -34,6 +34,11 @@ func NewApp() (*App, error) {
 
 	// setup router
 	router := setupRouter()
+	corsConfig := cors.DefaultConfig()
+	corsConfig.AllowAllOrigins = true
+
+	// set up middlewares
+	router.Use(cors.Default())
 	// API Routes
 	root := router.Group("api")
 	api.Api(root, conn).Routes()
